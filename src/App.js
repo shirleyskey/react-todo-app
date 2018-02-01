@@ -52,7 +52,6 @@ class App extends Component {
       listItem: list,
       uncomplete: leftJob
     });
-    console.log(this.state.filter);
     this.filterChangeHandler(this.state.filter);
   }
 
@@ -66,6 +65,7 @@ class App extends Component {
       listItem: list,
       uncomplete: leftJob
     });
+    this.filterChangeHandler(this.state.filter);
   }
 
   handleChange = (value) => {
@@ -93,6 +93,7 @@ class App extends Component {
         inputValue: '',
         uncomplete: total
       });
+      this.filterChangeHandler(this.state.filter);
     }
   }
 
