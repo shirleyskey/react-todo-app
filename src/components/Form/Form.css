@@ -1,0 +1,11 @@
+.error-helper {
+    color: #e53935;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.no-margin {
+    margin-bottom: 0px !important;
+}
+.margin-top-10 {
+    margin-top: 10px;
+}
