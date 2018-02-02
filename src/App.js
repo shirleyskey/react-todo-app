@@ -55,12 +55,16 @@ class App extends Component {
     this.filterChangeHandler(this.state.filter);
   }
 
-  removeItem = (itemIndex) => {
+  removeItem = (itemId) => {
     let list = this.state.listItem;
     let leftJob = this.state.uncomplete;
-    let count = list[itemIndex].completed ? 0 : 1;
-    leftJob -= count;
-    list.splice(itemIndex, 1);
+    list.map((item, index) => {
+      if (item.id === parseInt(itemId, 10)) {
+        let count = item.completed ? 0 : 1;
+        leftJob -= count;
+        list.splice(index, 1);
+      }
+    })
     this.setState({
       listItem: list,
       uncomplete: leftJob

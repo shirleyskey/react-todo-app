@@ -35,7 +35,7 @@ class Item extends Component {
                             {this.props.item.content}
                             <span className="right">
                                 <i
-                                    id={this.props.index}
+                                    id={this.props.item.id}
                                     className="small material-icons hoverable"
                                     onClick={this.removeItem}>
                                     delete_forever
