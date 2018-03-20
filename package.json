@@ -1,17 +1,27 @@
 {
-  "name": "todo-app",
-  "version": "0.1.0",
+  "name": "todomvc",
+  "version": "0.0.1",
   "private": true,
+  "devDependencies": {
+    "enzyme": "^2.8.2",
+    "react-addons-test-utils": "^15.5.1",
+    "react-scripts": "^1.0.2"
+  },
   "dependencies": {
-    "gulp": "^3.9.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^15.5.0",
+    "react-redux": "^5.0.5",
+    "react-test-renderer": "^15.5.4",
+    "redux": "^3.5.2",
+    "todomvc-app-css": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "react-scripts test"
   }
 }
